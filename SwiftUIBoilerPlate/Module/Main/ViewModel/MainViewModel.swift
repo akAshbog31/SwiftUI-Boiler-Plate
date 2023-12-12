@@ -10,6 +10,7 @@ import Foundation
 @MainActor final class MainViewModel: ObservableObject {
     //MARK: - Properties
     private var networkService: NetworkService
+    private var taskDisposeBag = TaskBag()
     @Published var isLoaing: Bool = false
     @Published var showAlert: Bool = false
     @Published var erroMessage: String = ""
@@ -43,7 +44,7 @@ import Foundation
                 showAlert = true
                 erroMessage = error.localizedDescription
             }
-        }
+        }.store(in: &taskDisposeBag)
     }
 }
 

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38A8FCD42B28C70500546164 /* Ext+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A8FCD32B28C70500546164 /* Ext+Image.swift */; };
+		38A8FCD62B28C71200546164 /* Ext+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A8FCD52B28C71200546164 /* Ext+Color.swift */; };
+		38A8FCD92B28CC3F00546164 /* TaskCancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A8FCD82B28CC3F00546164 /* TaskCancellable.swift */; };
 		38DE91EB2B27596A00641D59 /* SwiftUIBoilerPlate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DE91C72B27596A00641D59 /* SwiftUIBoilerPlate.swift */; };
 		38DE91EC2B27596A00641D59 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38DE91CA2B27596A00641D59 /* Preview Assets.xcassets */; };
 		38DE91ED2B27596A00641D59 /* RootManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DE91CD2B27596A00641D59 /* RootManager.swift */; };
@@ -40,6 +43,9 @@
 
 /* Begin PBXFileReference section */
 		049C41A22B26D6DE00413760 /* SwiftUIBoilerPlate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIBoilerPlate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		38A8FCD32B28C70500546164 /* Ext+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+Image.swift"; sourceTree = "<group>"; };
+		38A8FCD52B28C71200546164 /* Ext+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+Color.swift"; sourceTree = "<group>"; };
+		38A8FCD82B28CC3F00546164 /* TaskCancellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCancellable.swift; sourceTree = "<group>"; };
 		38DE91C72B27596A00641D59 /* SwiftUIBoilerPlate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIBoilerPlate.swift; sourceTree = "<group>"; };
 		38DE91CA2B27596A00641D59 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		38DE91CD2B27596A00641D59 /* RootManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootManager.swift; sourceTree = "<group>"; };
@@ -97,6 +103,14 @@
 				049C41A22B26D6DE00413760 /* SwiftUIBoilerPlate.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		38A8FCD72B28CC0B00546164 /* TaskCancellable */ = {
+			isa = PBXGroup;
+			children = (
+				38A8FCD82B28CC3F00546164 /* TaskCancellable.swift */,
+			);
+			path = TaskCancellable;
 			sourceTree = "<group>";
 		};
 		38DE91C52B27596A00641D59 /* SwiftUIBoilerPlate */ = {
@@ -191,6 +205,7 @@
 		38DE91DD2B27596A00641D59 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				38A8FCD72B28CC0B00546164 /* TaskCancellable */,
 				38DE92072B2781A600641D59 /* API */,
 				38DE91E02B27596A00641D59 /* Extentions */,
 				38DE91E82B27596A00641D59 /* GlobalVariables */,
@@ -208,6 +223,8 @@
 				38DE91E52B27596A00641D59 /* Ext+View.swift */,
 				38DE91E62B27596A00641D59 /* Ext+Date.swift */,
 				38DE91E72B27596A00641D59 /* Ext+UILable.swift */,
+				38A8FCD32B28C70500546164 /* Ext+Image.swift */,
+				38A8FCD52B28C71200546164 /* Ext+Color.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -360,13 +377,16 @@
 				38DE91EB2B27596A00641D59 /* SwiftUIBoilerPlate.swift in Sources */,
 				38DE91EE2B27596A00641D59 /* MainView.swift in Sources */,
 				38DE920C2B27821200641D59 /* MainModel.swift in Sources */,
+				38A8FCD62B28C71200546164 /* Ext+Color.swift in Sources */,
 				38DE92002B27596B00641D59 /* Ext+Date.swift in Sources */,
 				38DE91FB2B27596B00641D59 /* Ext+String.swift in Sources */,
 				38DE91FC2B27596B00641D59 /* Ext+Font.swift in Sources */,
 				38DE91FE2B27596B00641D59 /* Ext+DispatchQueue.swift in Sources */,
 				38DE91FD2B27596B00641D59 /* Ext+Numbers.swift in Sources */,
 				38DE92112B2782D600641D59 /* NetworkService.swift in Sources */,
+				38A8FCD42B28C70500546164 /* Ext+Image.swift in Sources */,
 				38DE92022B27596B00641D59 /* Globals.swift in Sources */,
+				38A8FCD92B28CC3F00546164 /* TaskCancellable.swift in Sources */,
 				38DE91FF2B27596B00641D59 /* Ext+View.swift in Sources */,
 				38DE91ED2B27596A00641D59 /* RootManager.swift in Sources */,
 				38DE92132B27831700641D59 /* NetworkManager.swift in Sources */,

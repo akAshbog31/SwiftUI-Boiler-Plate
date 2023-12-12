@@ -16,19 +16,40 @@ struct MainView: View {
     //MARK: - Body
     var body: some View {
         ScrollView(showsIndicators: false) {
-            VStack {
+            LazyVStack {
                 ForEach(viewModel.memsModel?.memes ?? [], id: \.id) { mem in
+                    VStack(spacing: 12.asDeviceHeight) {
+                        AsyncImage(url: URL(string: mem.url ?? "")) { image in
+                            image
+                                .resizable()
+                                .frame(maxWidth: .infinity)
+                                .frame(height: 500.asDeviceHeight)
+                                .clipShape(
+                                    RoundedRectangle(cornerRadius: 12.asDeviceHeight)
+                                )
+                        } placeholder: {
+                            Image(.appPlaceholder)
+                                .resizable()
+                                .frame(maxWidth: .infinity)
+                                .frame(height: 500.asDeviceHeight)
+                                .clipShape(
+                                    RoundedRectangle(cornerRadius: 12.asDeviceHeight)
+                                )
+                        }
+                        
                         Text(mem.name ?? "")
                             .padding(.vertical, 8)
                             .multilineTextAlignment(.center)
                             .font(.poppins(24, .semibold))
                         
                         Divider()
+                    }
                 }
             }
             .padding(.horizontal, 20)
             .frame(maxWidth: .infinity)
         }
+        .backGroundColor(.appTheme)
         .showHUD(viewModel.isLoaing)
         .task {
             viewModel.getMems()

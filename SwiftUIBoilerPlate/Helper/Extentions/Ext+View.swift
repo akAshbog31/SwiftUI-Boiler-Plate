@@ -67,6 +67,18 @@ extension View {
         .allowsHitTesting(!condition)
     }
     
+    /// Set Background color to the view
+    /// - Parameters:
+    ///   - color: Color to add
+    @ViewBuilder func `backGroundColor`(_ color: Color) -> some View {
+        ZStack {
+            color
+                .ignoresSafeArea()
+            
+            self
+        }
+    }
+    
     /// Apply a custom border to the view.
     /// - Parameters:
     ///   - color: The color of the border.
