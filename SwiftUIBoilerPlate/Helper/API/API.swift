@@ -6,15 +6,14 @@
 //
 
 import Foundation
-import Moya
 
 enum API {
     case getMemes
 }
 
-extension API: TargetType {
-    var baseURL: URL {
-        return URL(string: "https://api.imgflip.com/")!
+extension API: APIProtocol {
+    var baseURL: String {
+        return "https://api.imgflip.com/"
     }
     
     var path: String {
@@ -24,21 +23,21 @@ extension API: TargetType {
         }
     }
     
-    var method: Moya.Method {
+    var method: APIMethod {
         switch self {
         case .getMemes:
             return .get
         }
     }
     
-    var task: Task {
+    var task: Request {
         switch self {
         case .getMemes:
             return .requestPlain
         }
     }
     
-    var headers: [String : String]? {
+    var header: [String : String] {
         switch self {
         case .getMemes:
             return ["Content-Type": "application/json"]

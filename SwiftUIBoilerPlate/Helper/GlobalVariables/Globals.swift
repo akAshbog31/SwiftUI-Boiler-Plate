@@ -51,23 +51,3 @@ extension ValidationError: CustomStringConvertible {
         }
     }
 }
-
-//MARK: - APIError
-enum APIError: Error {
-    case badRequest(mesaage: String)
-    case decodingError
-    case invalidURL(urlStr: String)
-}
-
-extension APIError: CustomStringConvertible {
-    var description: String {
-        switch self {
-        case .badRequest(let mesaage):
-            return mesaage
-        case .decodingError:
-            return "Data could not be decodable."
-        case .invalidURL(let urlStr):
-            return "\(urlStr) is invalid url."
-        }
-    }
-}

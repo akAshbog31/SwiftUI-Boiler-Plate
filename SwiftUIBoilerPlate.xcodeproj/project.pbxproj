@@ -10,6 +10,11 @@
 		38A8FCD42B28C70500546164 /* Ext+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A8FCD32B28C70500546164 /* Ext+Image.swift */; };
 		38A8FCD62B28C71200546164 /* Ext+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A8FCD52B28C71200546164 /* Ext+Color.swift */; };
 		38A8FCD92B28CC3F00546164 /* TaskCancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A8FCD82B28CC3F00546164 /* TaskCancellable.swift */; };
+		38B0D6552B2F57BE00072FAF /* APIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B0D64E2B2F57BE00072FAF /* APIProtocol.swift */; };
+		38B0D6562B2F57BE00072FAF /* MultipartRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B0D64F2B2F57BE00072FAF /* MultipartRequest.swift */; };
+		38B0D6572B2F57BE00072FAF /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B0D6502B2F57BE00072FAF /* APIService.swift */; };
+		38B0D6582B2F57BE00072FAF /* Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B0D6522B2F57BE00072FAF /* Ext.swift */; };
+		38B0D6592B2F57BE00072FAF /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B0D6542B2F57BE00072FAF /* Enums.swift */; };
 		38DE91EB2B27596A00641D59 /* SwiftUIBoilerPlate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DE91C72B27596A00641D59 /* SwiftUIBoilerPlate.swift */; };
 		38DE91EC2B27596A00641D59 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38DE91CA2B27596A00641D59 /* Preview Assets.xcassets */; };
 		38DE91ED2B27596A00641D59 /* RootManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DE91CD2B27596A00641D59 /* RootManager.swift */; };
@@ -33,7 +38,6 @@
 		38DE92002B27596B00641D59 /* Ext+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DE91E62B27596A00641D59 /* Ext+Date.swift */; };
 		38DE92012B27596B00641D59 /* Ext+UILable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DE91E72B27596A00641D59 /* Ext+UILable.swift */; };
 		38DE92022B27596B00641D59 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DE91E92B27596A00641D59 /* Globals.swift */; };
-		38DE92062B27819400641D59 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 38DE92052B27819400641D59 /* Moya */; };
 		38DE92092B2781B600641D59 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DE92082B2781B600641D59 /* API.swift */; };
 		38DE920C2B27821200641D59 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DE920B2B27821200641D59 /* MainModel.swift */; };
 		38DE92112B2782D600641D59 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DE92102B2782D600641D59 /* NetworkService.swift */; };
@@ -46,6 +50,11 @@
 		38A8FCD32B28C70500546164 /* Ext+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+Image.swift"; sourceTree = "<group>"; };
 		38A8FCD52B28C71200546164 /* Ext+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+Color.swift"; sourceTree = "<group>"; };
 		38A8FCD82B28CC3F00546164 /* TaskCancellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCancellable.swift; sourceTree = "<group>"; };
+		38B0D64E2B2F57BE00072FAF /* APIProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIProtocol.swift; sourceTree = "<group>"; };
+		38B0D64F2B2F57BE00072FAF /* MultipartRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipartRequest.swift; sourceTree = "<group>"; };
+		38B0D6502B2F57BE00072FAF /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		38B0D6522B2F57BE00072FAF /* Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ext.swift; sourceTree = "<group>"; };
+		38B0D6542B2F57BE00072FAF /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		38DE91C72B27596A00641D59 /* SwiftUIBoilerPlate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIBoilerPlate.swift; sourceTree = "<group>"; };
 		38DE91CA2B27596A00641D59 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		38DE91CD2B27596A00641D59 /* RootManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootManager.swift; sourceTree = "<group>"; };
@@ -82,7 +91,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38DE92062B27819400641D59 /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +119,34 @@
 				38A8FCD82B28CC3F00546164 /* TaskCancellable.swift */,
 			);
 			path = TaskCancellable;
+			sourceTree = "<group>";
+		};
+		38B0D64D2B2F57BE00072FAF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				38B0D64E2B2F57BE00072FAF /* APIProtocol.swift */,
+				38B0D64F2B2F57BE00072FAF /* MultipartRequest.swift */,
+				38B0D6502B2F57BE00072FAF /* APIService.swift */,
+				38B0D6512B2F57BE00072FAF /* Ext */,
+				38B0D6532B2F57BE00072FAF /* Enum */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		38B0D6512B2F57BE00072FAF /* Ext */ = {
+			isa = PBXGroup;
+			children = (
+				38B0D6522B2F57BE00072FAF /* Ext.swift */,
+			);
+			path = Ext;
+			sourceTree = "<group>";
+		};
+		38B0D6532B2F57BE00072FAF /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				38B0D6542B2F57BE00072FAF /* Enums.swift */,
+			);
+			path = Enum;
 			sourceTree = "<group>";
 		};
 		38DE91C52B27596A00641D59 /* SwiftUIBoilerPlate */ = {
@@ -205,6 +241,7 @@
 		38DE91DD2B27596A00641D59 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				38B0D64D2B2F57BE00072FAF /* Network */,
 				38A8FCD72B28CC0B00546164 /* TaskCancellable */,
 				38DE92072B2781A600641D59 /* API */,
 				38DE91E02B27596A00641D59 /* Extentions */,
@@ -305,7 +342,6 @@
 			);
 			name = SwiftUIBoilerPlate;
 			packageProductDependencies = (
-				38DE92052B27819400641D59 /* Moya */,
 			);
 			productName = SwiftUIDemo;
 			productReference = 049C41A22B26D6DE00413760 /* SwiftUIBoilerPlate.app */;
@@ -336,7 +372,6 @@
 			);
 			mainGroup = 049C41992B26D6DD00413760;
 			packageReferences = (
-				38DE92042B27819400641D59 /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			productRefGroup = 049C41A32B26D6DE00413760 /* Products */;
 			projectDirPath = "";
@@ -378,10 +413,12 @@
 				38DE91EE2B27596A00641D59 /* MainView.swift in Sources */,
 				38DE920C2B27821200641D59 /* MainModel.swift in Sources */,
 				38A8FCD62B28C71200546164 /* Ext+Color.swift in Sources */,
+				38B0D6572B2F57BE00072FAF /* APIService.swift in Sources */,
 				38DE92002B27596B00641D59 /* Ext+Date.swift in Sources */,
 				38DE91FB2B27596B00641D59 /* Ext+String.swift in Sources */,
 				38DE91FC2B27596B00641D59 /* Ext+Font.swift in Sources */,
 				38DE91FE2B27596B00641D59 /* Ext+DispatchQueue.swift in Sources */,
+				38B0D6552B2F57BE00072FAF /* APIProtocol.swift in Sources */,
 				38DE91FD2B27596B00641D59 /* Ext+Numbers.swift in Sources */,
 				38DE92112B2782D600641D59 /* NetworkService.swift in Sources */,
 				38A8FCD42B28C70500546164 /* Ext+Image.swift in Sources */,
@@ -393,6 +430,9 @@
 				38DE92092B2781B600641D59 /* API.swift in Sources */,
 				38DE92012B27596B00641D59 /* Ext+UILable.swift in Sources */,
 				38DE92152B2786EB00641D59 /* MainViewModel.swift in Sources */,
+				38B0D6562B2F57BE00072FAF /* MultipartRequest.swift in Sources */,
+				38B0D6592B2F57BE00072FAF /* Enums.swift in Sources */,
+				38B0D6582B2F57BE00072FAF /* Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,25 +641,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		38DE92042B27819400641D59 /* XCRemoteSwiftPackageReference "Moya" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Moya/Moya.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 15.0.3;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		38DE92052B27819400641D59 /* Moya */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 38DE92042B27819400641D59 /* XCRemoteSwiftPackageReference "Moya" */;
-			productName = Moya;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 049C419A2B26D6DD00413760 /* Project object */;
 }
