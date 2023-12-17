@@ -15,6 +15,7 @@
 		38B0D6572B2F57BE00072FAF /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B0D6502B2F57BE00072FAF /* APIService.swift */; };
 		38B0D6582B2F57BE00072FAF /* Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B0D6522B2F57BE00072FAF /* Ext.swift */; };
 		38B0D6592B2F57BE00072FAF /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B0D6542B2F57BE00072FAF /* Enums.swift */; };
+		38B0D65C2B2F5DA900072FAF /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B0D65B2B2F5DA900072FAF /* ImagePicker.swift */; };
 		38DE91EB2B27596A00641D59 /* SwiftUIBoilerPlate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DE91C72B27596A00641D59 /* SwiftUIBoilerPlate.swift */; };
 		38DE91EC2B27596A00641D59 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38DE91CA2B27596A00641D59 /* Preview Assets.xcassets */; };
 		38DE91ED2B27596A00641D59 /* RootManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DE91CD2B27596A00641D59 /* RootManager.swift */; };
@@ -55,6 +56,7 @@
 		38B0D6502B2F57BE00072FAF /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		38B0D6522B2F57BE00072FAF /* Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ext.swift; sourceTree = "<group>"; };
 		38B0D6542B2F57BE00072FAF /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		38B0D65B2B2F5DA900072FAF /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		38DE91C72B27596A00641D59 /* SwiftUIBoilerPlate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIBoilerPlate.swift; sourceTree = "<group>"; };
 		38DE91CA2B27596A00641D59 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		38DE91CD2B27596A00641D59 /* RootManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootManager.swift; sourceTree = "<group>"; };
@@ -149,6 +151,14 @@
 			path = Enum;
 			sourceTree = "<group>";
 		};
+		38B0D65A2B2F5D9C00072FAF /* ImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				38B0D65B2B2F5DA900072FAF /* ImagePicker.swift */,
+			);
+			path = ImagePicker;
+			sourceTree = "<group>";
+		};
 		38DE91C52B27596A00641D59 /* SwiftUIBoilerPlate */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,6 +251,7 @@
 		38DE91DD2B27596A00641D59 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				38B0D65A2B2F5D9C00072FAF /* ImagePicker */,
 				38B0D64D2B2F57BE00072FAF /* Network */,
 				38A8FCD72B28CC0B00546164 /* TaskCancellable */,
 				38DE92072B2781A600641D59 /* API */,
@@ -411,6 +422,7 @@
 			files = (
 				38DE91EB2B27596A00641D59 /* SwiftUIBoilerPlate.swift in Sources */,
 				38DE91EE2B27596A00641D59 /* MainView.swift in Sources */,
+				38B0D65C2B2F5DA900072FAF /* ImagePicker.swift in Sources */,
 				38DE920C2B27821200641D59 /* MainModel.swift in Sources */,
 				38A8FCD62B28C71200546164 /* Ext+Color.swift in Sources */,
 				38B0D6572B2F57BE00072FAF /* APIService.swift in Sources */,
