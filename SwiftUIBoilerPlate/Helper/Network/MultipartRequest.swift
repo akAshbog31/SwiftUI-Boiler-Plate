@@ -8,22 +8,22 @@
 import Foundation
 
 public struct MultipartRequest {
-    //MARK: - Properties
+    // MARK: - Properties
     public let boundary: String
     private let separator: String = "\r\n"
     private var data: Data
 
-    //MARK: - Life cycle
+    // MARK: - Life cycle
     public init(boundary: String = UUID().uuidString) {
         self.boundary = boundary
-        self.data = .init()
+        data = .init()
     }
-    
-    //MARK: - Functions
+
+    // MARK: - Functions
     private mutating func appendBoundarySeparator() {
         data.append("--\(boundary)\(separator)")
     }
-    
+
     private mutating func appendSeparator() {
         data.append(separator)
     }
@@ -57,4 +57,3 @@ public struct MultipartRequest {
         return bodyData
     }
 }
-

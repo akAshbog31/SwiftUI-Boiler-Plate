@@ -5,46 +5,36 @@
 //  Created by AKASH BOGHANI on 11/12/23.
 //
 
-import Foundation
+import SwiftUI
 
-@MainActor final class MainViewModel: ObservableObject {
-    //MARK: - Properties
+@MainActor
+final class MainViewModel: ObservableObject {
+    // MARK: - Properties
     private var networkService: NetworkService
     private var taskDisposeBag = TaskBag()
-    @Published var isLoaing: Bool = false
-    @Published var showAlert: Bool = false
-    @Published var erroMessage: String = ""
-    @Published var memsModel: MemsModel? = nil
-    
-    //MARK: - Life-Cycle
+    @Published var isLoading: Bool = false
+    @Published var memsModel: MemsModel?
+
+    // MARK: - Life-Cycle
     init(networkService: NetworkService = NetworkManager()) {
         self.networkService = networkService
     }
-    
-    //MARK: - Enums
-    enum Output {
-        case loader(isLoading: Bool)
-        case none
-    }
-    
-    //MARK: - Functions
+
+    // MARK: - Functions
     func getMems() {
-        isLoaing = true
+        isLoading = true
         Task {
             do {
                 let responseModel = try await networkService.getMems()
-                isLoaing = false
                 memsModel = responseModel.data
+                isLoading = false
             } catch let error as APIError {
-                isLoaing = false
-                showAlert = true
-                erroMessage = error.description
+                isLoading = false
+                UIApplication.keyWindow?.rootViewController?.showAlert(msg: error.description)
             } catch {
-                isLoaing = false
-                showAlert = true
-                erroMessage = error.localizedDescription
+                isLoading = false
+                UIApplication.keyWindow?.rootViewController?.showAlert(msg: error.localizedDescription)
             }
         }.store(in: &taskDisposeBag)
     }
 }
-

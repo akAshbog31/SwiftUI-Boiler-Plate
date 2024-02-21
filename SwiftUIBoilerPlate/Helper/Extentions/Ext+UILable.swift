@@ -12,7 +12,7 @@ extension UILabel {
     @IBInspectable
     var dynamicFontSize: CGFloat {
         get {
-            return self.dynamicFontSize
+            self.dynamicFontSize
         }
         set {
             let size = newValue * UIScreen.main.bounds.size.width / 430

@@ -8,13 +8,14 @@
 import SwiftUI
 import UIKit
 
+// MARK: - ImagePicker
 struct ImagePicker: UIViewControllerRepresentable {
-    //MARK: - Properties
+    // MARK: - Properties
     let sourceType: UIImagePickerController.SourceType
     @Environment(\.presentationMode) var presentationMode
     @Binding var selectedImage: UIImage?
-    
-    //MARK: - Functions
+
+    // MARK: - Functions
     func makeUIViewController(context: Context) -> some UIViewController {
         let imagepicker = UIImagePickerController()
         imagepicker.sourceType = sourceType
@@ -22,32 +23,36 @@ struct ImagePicker: UIViewControllerRepresentable {
         imagepicker.delegate = context.coordinator
         return imagepicker
     }
-    
-    func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) { }
-    
+
+    func updateUIViewController(_: UIViewControllerType, context _: Context) {}
+
     func makeCoordinator() -> Coordinater {
-        return Coordinater(parent: self)
+        Coordinater(parent: self)
     }
 }
 
-//MARK: - Coordinater
+// MARK: - Coordinater
+
+// MARK: - Coordinater
 class Coordinater: NSObject, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-    //MARK: - Properties
+    // MARK: - Properties
     var parent: ImagePicker
-    
-    //MARK: - Life Cycle
+
+    // MARK: - Life Cycle
     init(parent: ImagePicker) {
         self.parent = parent
     }
-    
-    //MARK: - Functions
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        guard let image = info[.originalImage] as? UIImage else { return }
+
+    // MARK: - Functions
+    func imagePickerController(_: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
+        guard let image = info[.originalImage] as? UIImage else {
+            return
+        }
         parent.selectedImage = image
         parent.presentationMode.wrappedValue.dismiss()
     }
-    
-    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+
+    func imagePickerControllerDidCancel(_: UIImagePickerController) {
         parent.presentationMode.wrappedValue.dismiss()
     }
 }

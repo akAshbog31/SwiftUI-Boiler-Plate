@@ -9,10 +9,10 @@ import SwiftUI
 
 @main
 struct SwiftUIBoilerPlate: App {
-    //MARK: - Properties
+    // MARK: - Properties
     @StateObject private var rootManager = RootManager()
-    
-    //MARK: - LifeCycle
+
+    // MARK: - LifeCycle
     var body: some Scene {
         WindowGroup {
             Group {
@@ -23,8 +23,8 @@ struct SwiftUIBoilerPlate: App {
             .environmentObject(rootManager)
         }
     }
-    
-    //MARK: - Body
-    
-    //MARK: - Functions
+
+    // MARK: - Body
+
+    // MARK: - Functions
 }

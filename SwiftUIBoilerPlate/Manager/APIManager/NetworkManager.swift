@@ -9,6 +9,6 @@ import Foundation
 
 class NetworkManager: NetworkService {
     func getMems() async throws -> MainModel<MemsModel> {
-        return try await APIService.request(API.getMemes)
+        try await APIService.request(API.getMemes)
     }
 }

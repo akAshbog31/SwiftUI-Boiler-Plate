@@ -7,26 +7,16 @@
 
 import Foundation
 import UIKit
-import Combine
 
-//MARK: - TypeAlice
-typealias Bag = Set<AnyCancellable>
+// MARK: - TypeAlice
 typealias TaskBag = Set<TaskCancellable>
-typealias AppSubject<T> = PassthroughSubject<T, Never>
-typealias AppAnyPublisher<T> = AnyPublisher<T, Never>
 
-//MARK: - Properties
+// MARK: - Properties
 public let queue = DispatchQueue.main
 
-//MARK: - Globals
-enum Globals {
-    //MARK: - Key Window
-    static var keyWindow: UIWindow? {
-        return UIApplication.shared.connectedScenes.compactMap { ($0 as? UIWindowScene)?.keyWindow }.last
-    }
-}
+// MARK: - ValidationError
 
-//MARK: - ValidationError
+// MARK: - ValidationError
 enum ValidationError: Error {
     case empty(type: String)
     case inValidEmailOrPhonenumber
@@ -35,10 +25,11 @@ enum ValidationError: Error {
     case inValidOtpCount
 }
 
+// MARK: - CustomStringConvertible
 extension ValidationError: CustomStringConvertible {
     var description: String {
         switch self {
-        case .empty(let type):
+        case let .empty(type):
             return "\(type) must not empty."
         case .inValidEmailOrPhonenumber:
             return "Email/Phone number is not valid."

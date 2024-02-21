@@ -8,10 +8,10 @@
 import Foundation
 
 final class RootManager: ObservableObject {
-    //MARK: - Properties
+    // MARK: - Properties
     @Published var currentRoot: Root = .main
-    
-    //MARK: - Root
+
+    // MARK: - Root
     enum Root {
         case main
     }

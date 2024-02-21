@@ -7,8 +7,8 @@
 
 import Foundation
 
-extension DispatchQueue {
-    public func after(time interval: TimeInterval, work: @escaping () -> Void) {
+public extension DispatchQueue {
+    func after(time interval: TimeInterval, work: @escaping () -> Void) {
         asyncAfter(deadline: .now() + interval) {
             work()
         }
