@@ -26,20 +26,21 @@ struct MainView: View {
                             .frame(maxWidth: .infinity)
                             .frame(height: 200.asDeviceHeight)
                             .aspectRatio(contentMode: .fill)
-                            .clipShape(
-                                RoundedRectangle(cornerRadius: 12.asDeviceHeight)
-                            )
 
                         Text(mem.name ?? "")
-                            .padding(.vertical, 8)
+                            .padding(.bottom)
                             .multilineTextAlignment(.center)
                             .font(.poppins(24, .semibold))
-
-                        Divider()
                     }
+                    .background(Material.ultraThin)
+                    .clipShape(
+                        RoundedRectangle(cornerRadius: 16.asDeviceHeight)
+                    )
+                    .shadow(radius: 10)
                     .onTapGesture {
                         router.push(.text(text: mem.name ?? ""))
                     }
+                    .padding(.vertical)
                 }
             }
             .padding(.horizontal, 20)

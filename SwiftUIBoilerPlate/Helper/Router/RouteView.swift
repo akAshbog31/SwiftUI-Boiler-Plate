@@ -29,8 +29,7 @@ struct RouteView<Screen: View>: View {
             .isDetailLink(false)
             #endif
 
-            content
-                .hideNavigationBar() // MARK: - hide navigation bar for all over app
+            content.hideNavigationBar() // MARK: - hide navigation bar for all over app
         }
     }
 }
@@ -39,8 +38,7 @@ struct RouteView<Screen: View>: View {
 extension View {
     @ViewBuilder
     func hideNavigationBar() -> some View {
-        self
-            .navigationTitle("")
+        navigationTitle("")
             .navigationBarBackButtonHidden()
     }
 }

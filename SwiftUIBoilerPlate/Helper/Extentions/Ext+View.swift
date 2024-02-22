@@ -21,28 +21,6 @@ extension View {
         }
     }
 
-    /// Navigate to a new view.
-    /// - Parameters:
-    ///   - view: View to navigate to.
-    ///   - binding: Only navigates when this condition is `true`.
-    func navigate<NewView: View>(to view: NewView, when binding: Binding<Bool>) -> some View {
-        NavigationView {
-            ZStack {
-                self
-//                    .navigationBarTitle("")
-//                    .navigationBarHidden(true)
-
-                NavigationLink(
-                    destination: view,
-                    isActive: binding
-                ) {
-                    EmptyView()
-                }
-            }
-        }
-        .navigationViewStyle(.stack)
-    }
-
     /// Apply a custom border to the view.
     /// - Parameters:
     ///   - color: The color of the border.
