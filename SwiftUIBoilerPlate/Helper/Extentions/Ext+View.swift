@@ -29,13 +29,11 @@ extension View {
         NavigationView {
             ZStack {
                 self
-                    .navigationBarTitle("")
-                    .navigationBarHidden(true)
+//                    .navigationBarTitle("")
+//                    .navigationBarHidden(true)
 
                 NavigationLink(
-                    destination: view
-                        .navigationBarTitle("")
-                        .navigationBarHidden(true),
+                    destination: view,
                     isActive: binding
                 ) {
                     EmptyView()

@@ -10,17 +10,17 @@ import SwiftUI
 @main
 struct SwiftUIBoilerPlate: App {
     // MARK: - Properties
-    @StateObject private var rootManager = RootManager()
+    @StateObject private var router = Router(initial: AppRoutes.main)
 
     // MARK: - LifeCycle
     var body: some Scene {
         WindowGroup {
-            Group {
-                switch rootManager.currentRoot {
+            RouterHost(router) { route in
+                switch route {
                 case .main: MainView()
+                case let .text(text): Text(text)
                 }
             }
-            .environmentObject(rootManager)
         }
     }
 

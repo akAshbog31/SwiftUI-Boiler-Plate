@@ -15,6 +15,13 @@
 		383118342B864C7D005A5CBB /* Ext+UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383118332B864C7D005A5CBB /* Ext+UIApplication.swift */; };
 		383118382B86645A005A5CBB /* HUDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383118372B86645A005A5CBB /* HUDView.swift */; };
 		3831183C2B867AAB005A5CBB /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3831183B2B867AAB005A5CBB /* UserDefault.swift */; };
+		38397C7B2B87C85C0009AEA1 /* RouteViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38397C742B87C85C0009AEA1 /* RouteViewState.swift */; };
+		38397C7C2B87C85C0009AEA1 /* AppRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38397C752B87C85C0009AEA1 /* AppRoutes.swift */; };
+		38397C7D2B87C85C0009AEA1 /* RouteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38397C762B87C85C0009AEA1 /* RouteView.swift */; };
+		38397C7E2B87C85C0009AEA1 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38397C772B87C85C0009AEA1 /* Router.swift */; };
+		38397C7F2B87C85C0009AEA1 /* RouterHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38397C782B87C85C0009AEA1 /* RouterHost.swift */; };
+		38397C802B87C85C0009AEA1 /* RouteViewGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38397C792B87C85C0009AEA1 /* RouteViewGenerator.swift */; };
+		38397C812B87C85C0009AEA1 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38397C7A2B87C85C0009AEA1 /* Route.swift */; };
 		38A8FCD42B28C70500546164 /* Ext+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A8FCD32B28C70500546164 /* Ext+Image.swift */; };
 		38A8FCD62B28C71200546164 /* Ext+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A8FCD52B28C71200546164 /* Ext+Color.swift */; };
 		38A8FCD92B28CC3F00546164 /* TaskCancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A8FCD82B28CC3F00546164 /* TaskCancellable.swift */; };
@@ -26,7 +33,6 @@
 		38B0D65C2B2F5DA900072FAF /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B0D65B2B2F5DA900072FAF /* ImagePicker.swift */; };
 		38DE91EB2B27596A00641D59 /* SwiftUIBoilerPlate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DE91C72B27596A00641D59 /* SwiftUIBoilerPlate.swift */; };
 		38DE91EC2B27596A00641D59 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38DE91CA2B27596A00641D59 /* Preview Assets.xcassets */; };
-		38DE91ED2B27596A00641D59 /* RootManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DE91CD2B27596A00641D59 /* RootManager.swift */; };
 		38DE91EE2B27596A00641D59 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DE91CF2B27596A00641D59 /* MainView.swift */; };
 		38DE91EF2B27596A00641D59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38DE91D12B27596A00641D59 /* LaunchScreen.storyboard */; };
 		38DE91F02B27596A00641D59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38DE91D22B27596A00641D59 /* Assets.xcassets */; };
@@ -62,6 +68,13 @@
 		383118332B864C7D005A5CBB /* Ext+UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIApplication.swift"; sourceTree = "<group>"; };
 		383118372B86645A005A5CBB /* HUDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDView.swift; sourceTree = "<group>"; };
 		3831183B2B867AAB005A5CBB /* UserDefault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
+		38397C742B87C85C0009AEA1 /* RouteViewState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteViewState.swift; sourceTree = "<group>"; };
+		38397C752B87C85C0009AEA1 /* AppRoutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRoutes.swift; sourceTree = "<group>"; };
+		38397C762B87C85C0009AEA1 /* RouteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteView.swift; sourceTree = "<group>"; };
+		38397C772B87C85C0009AEA1 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		38397C782B87C85C0009AEA1 /* RouterHost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterHost.swift; sourceTree = "<group>"; };
+		38397C792B87C85C0009AEA1 /* RouteViewGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteViewGenerator.swift; sourceTree = "<group>"; };
+		38397C7A2B87C85C0009AEA1 /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		38A8FCD32B28C70500546164 /* Ext+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+Image.swift"; sourceTree = "<group>"; };
 		38A8FCD52B28C71200546164 /* Ext+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+Color.swift"; sourceTree = "<group>"; };
 		38A8FCD82B28CC3F00546164 /* TaskCancellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCancellable.swift; sourceTree = "<group>"; };
@@ -73,7 +86,6 @@
 		38B0D65B2B2F5DA900072FAF /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		38DE91C72B27596A00641D59 /* SwiftUIBoilerPlate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIBoilerPlate.swift; sourceTree = "<group>"; };
 		38DE91CA2B27596A00641D59 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		38DE91CD2B27596A00641D59 /* RootManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootManager.swift; sourceTree = "<group>"; };
 		38DE91CF2B27596A00641D59 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		38DE91D12B27596A00641D59 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		38DE91D22B27596A00641D59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -154,6 +166,20 @@
 				3831183B2B867AAB005A5CBB /* UserDefault.swift */,
 			);
 			path = PropertWrapper;
+			sourceTree = "<group>";
+		};
+		38397C732B87C85C0009AEA1 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				38397C752B87C85C0009AEA1 /* AppRoutes.swift */,
+				38397C7A2B87C85C0009AEA1 /* Route.swift */,
+				38397C772B87C85C0009AEA1 /* Router.swift */,
+				38397C782B87C85C0009AEA1 /* RouterHost.swift */,
+				38397C762B87C85C0009AEA1 /* RouteView.swift */,
+				38397C792B87C85C0009AEA1 /* RouteViewGenerator.swift */,
+				38397C742B87C85C0009AEA1 /* RouteViewState.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		38A8FCD72B28CC0B00546164 /* TaskCancellable */ = {
@@ -242,17 +268,8 @@
 			isa = PBXGroup;
 			children = (
 				38DE920F2B2782C700641D59 /* APIManager */,
-				38DE91CC2B27596A00641D59 /* RootManager */,
 			);
 			path = Manager;
-			sourceTree = "<group>";
-		};
-		38DE91CC2B27596A00641D59 /* RootManager */ = {
-			isa = PBXGroup;
-			children = (
-				38DE91CD2B27596A00641D59 /* RootManager.swift */,
-			);
-			path = RootManager;
 			sourceTree = "<group>";
 		};
 		38DE91CE2B27596A00641D59 /* View */ = {
@@ -292,6 +309,7 @@
 		38DE91DD2B27596A00641D59 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				38397C732B87C85C0009AEA1 /* Router */,
 				3831183A2B867AAB005A5CBB /* PropertWrapper */,
 				383118352B86642D005A5CBB /* RepresentableViews */,
 				38B0D64D2B2F57BE00072FAF /* Network */,
@@ -519,31 +537,37 @@
 				38DE920C2B27821200641D59 /* MainModel.swift in Sources */,
 				38A8FCD62B28C71200546164 /* Ext+Color.swift in Sources */,
 				38B0D6572B2F57BE00072FAF /* APIService.swift in Sources */,
+				38397C802B87C85C0009AEA1 /* RouteViewGenerator.swift in Sources */,
 				38DE92002B27596B00641D59 /* Ext+Date.swift in Sources */,
 				38DE91FB2B27596B00641D59 /* Ext+String.swift in Sources */,
 				38DE91FC2B27596B00641D59 /* Ext+Font.swift in Sources */,
 				38DE91FE2B27596B00641D59 /* Ext+DispatchQueue.swift in Sources */,
 				38B0D6552B2F57BE00072FAF /* APIProtocol.swift in Sources */,
 				3831183C2B867AAB005A5CBB /* UserDefault.swift in Sources */,
+				38397C7C2B87C85C0009AEA1 /* AppRoutes.swift in Sources */,
+				38397C7F2B87C85C0009AEA1 /* RouterHost.swift in Sources */,
 				38DE91FD2B27596B00641D59 /* Ext+Numbers.swift in Sources */,
 				38DE92112B2782D600641D59 /* NetworkService.swift in Sources */,
 				38A8FCD42B28C70500546164 /* Ext+Image.swift in Sources */,
+				38397C7E2B87C85C0009AEA1 /* Router.swift in Sources */,
 				38DE92022B27596B00641D59 /* Globals.swift in Sources */,
 				38A8FCD92B28CC3F00546164 /* TaskCancellable.swift in Sources */,
 				3831182C2B864AB1005A5CBB /* Ext+Publishers.swift in Sources */,
+				38397C7D2B87C85C0009AEA1 /* RouteView.swift in Sources */,
 				3831182A2B86493E005A5CBB /* Ext+Bundle.swift in Sources */,
 				383118382B86645A005A5CBB /* HUDView.swift in Sources */,
 				383118342B864C7D005A5CBB /* Ext+UIApplication.swift in Sources */,
 				38DE91FF2B27596B00641D59 /* Ext+View.swift in Sources */,
-				38DE91ED2B27596A00641D59 /* RootManager.swift in Sources */,
 				38DE92132B27831700641D59 /* NetworkManager.swift in Sources */,
 				38DE92092B2781B600641D59 /* API.swift in Sources */,
 				383118282B8648F4005A5CBB /* Ext+UIViewController.swift in Sources */,
+				38397C7B2B87C85C0009AEA1 /* RouteViewState.swift in Sources */,
 				38DE92012B27596B00641D59 /* Ext+UILable.swift in Sources */,
 				38DE92152B2786EB00641D59 /* MainViewModel.swift in Sources */,
 				38B0D6562B2F57BE00072FAF /* MultipartRequest.swift in Sources */,
 				38B0D6592B2F57BE00072FAF /* Enums.swift in Sources */,
 				38B0D6582B2F57BE00072FAF /* Ext.swift in Sources */,
+				38397C812B87C85C0009AEA1 /* Route.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

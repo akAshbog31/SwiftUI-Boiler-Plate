@@ -8,21 +8,15 @@
 import Foundation
 
 // MARK: - MainModel
-
-// MARK: - MainModel
 struct MainModel<T: Codable>: Codable {
     let success: Bool?
     let data: T?
 }
 
 // MARK: - MemsModel
-
-// MARK: - MemsModel
 struct MemsModel: Codable {
     let memes: [Mems]?
 }
-
-// MARK: - Mems
 
 // MARK: - Mems
 struct Mems: Codable, Identifiable {

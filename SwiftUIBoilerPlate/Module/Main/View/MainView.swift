@@ -10,6 +10,7 @@ import SwiftUI
 // MARK: - MainView
 struct MainView: View {
     // MARK: - Properties
+    @EnvironmentObject private var router: Router<AppRoutes>
     @ObservedObject private var viewModel = MainViewModel()
 
     // MARK: - LifeCycle
@@ -35,6 +36,9 @@ struct MainView: View {
                             .font(.poppins(24, .semibold))
 
                         Divider()
+                    }
+                    .onTapGesture {
+                        router.push(.text(text: mem.name ?? ""))
                     }
                 }
             }
